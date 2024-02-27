@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            margin: 12px;
+        }
+        .container
+        {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            height: 100vh;
+            width: 100%;
+            
+        }
+        .box{
+            background-color: burlywood;
+            width: 100%;
+            text-align: center;
+            border: 2px solid black;
+        }
+        .box a{
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 25px;
+            color: #000;
+        }
+        .container:hover .box
+        {
+            background-color: aqua;
+            border: 5px solid blue;
+            box-shadow: 0 0 20px rgb(58, 20, 209),inset  0 0 20px rgb(44, 5, 99);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>Welcome To Customer Home</h1>
+    <div class="container">
+        <div class="box"><a href="/viewSong" method="get">click here to ViewSong</a><br><br>
+        </div>
+        <div class="box"> <a href="/exploreSongs" method="get">Explore Songs</a><br><br>
+        </div>
+        <div class="box"> <a href="/explorePremiumSongs" method="get">Explore Songs Premium customer</a><br><br>
+        </div>
+        <div class="box"> <a href="/createcustomerplaylist" method="get">Create Playlist</a><br><br>
+        </div>
+        <div class="box"> <a href="/customerviewplaylist" method="get">View Playlist</a><br><br>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

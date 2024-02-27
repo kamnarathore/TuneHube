@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ADD Songs</title>
+<style>
+  body
+  {
+    background-color: #caded7;
+  }  
+.container{
+   height: 35rem;
+   width: 30rem;
+   background-color: rgb(7, 5, 5);
+   opacity: 1.4;
+   color: white;
+   padding: 23px 12px 1px 44px;
+   border-radius: 12px;
+   margin: 50px auto;
+   
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+h1
+{
+    text-align: center;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+</style>
+</head>
+<body>
+<div class="container">  
+    <h1>Add Premium Song</h1>
+<form action="/addsong" method="post">
+    <label for="name">Song Name :</label>
+    <input type="text" name="name" id="Sname"><br><br>
+    <label for="artist">Artist :</label>
+    <input type="text" name="artist" id="artist"><br><br>
+    <label for="genre">Song genre :</label>
+    <input type="text" name="genre" id="Sgenre"><br><br>
+    <label for="link">Song link :</label>
+    <input type="text" name="link" id="Slink"><br><br>
+    <input type="submit" value="ADD Songs">
+   </form>
+
+</div>
+</body>
+</html>

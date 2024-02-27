@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+  *{
+      margin: 0;padding: 0;
+      box-sizing: border-box;
+  }
+  body
+  {
+    background-color: blanchedalmond;
+  }
+  .form
+  {
+     background-color: #564545;
+   margin: 50px auto;
+   width: 500px;
+   padding: 70px;
+     color: white;
+     border-radius: 20px;
+  }
+  input[type=submit]
+  {
+      display: block;
+     margin: auto;
+     padding: 10px 10px 10px 10px;
+  }
+  h1{
+    text-align: center;
+    margin: 15px;
+  }
+</style>
+</head>
+<body>
+  <h1>Email id is already registered try again</h1>
+  <div class="form">
+        <form action="/registeration" method="post">
+            <label for="Username">UserName:</label>
+            <input type="text" name="name" id="user"><br><br>
+            <label for="Email ID">Email ID :</label>
+            <input type="email" name="email" id="email"><br><br>
+            <label for="Password">Password :</label>
+            <input type="password" name="pass" id="password"><br><br>
+            <label for="gender">Gender :</label>
+            <input type="radio" name="gender" id="F" value="Female">F
+            <input type="radio" name="gender" id="M" value="Male">M
+            <input type="radio" name="gender" id="O" value="Other">O<br><br>
+            <label for="role">Role:</label>
+            <input type="radio" name="role" id="role" value="Admin">Admin
+            <input type="radio" name="role" id="Urole" value="User">User
+            <br><br>
+            <label for="Address">Address :</label><br><br>
+            <textarea name="Address" id="" cols="50" rows="10"></textarea><br><br>
+            <input type="submit" value="Ragister">
+        </form>
+    </div>
+</body>
+</html>

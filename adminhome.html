@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Home</title>
+    <style>
+        body
+        {
+            background-color: black;
+        }
+.container
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    row-gap: 20px;
+
+}
+.box{
+    height: 10%;
+    width: 100%;
+border: 2px solid black;
+background-color: rgb(189, 19, 138);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.box a{
+    color: white;
+text-decoration: none;
+font-weight: 700;
+font-size: 25px;
+
+}
+h1{
+    text-align: center;
+    color: rgb(136, 255, 0);
+    font-weight: bold;
+    font-family: sans-serif;
+font-size: 30px;
+}
+    </style>
+</head>
+
+<body>
+    <h1> Welcome Admin</h1>
+   <div class="container">
+    <div class="box"><a href="/map-song">ADMIN ADD SONGS</a><br><br>
+    </div>
+    <div class="box"><a href="/map-viewsong">VIEW SONGS</a><br><br>
+    </div>
+    <div class="box"><a href="/map-customersong">ADD CUSTOMER SONGS</a><br><br>
+    </div>
+    <div class="box"> <a href="/createplaylist">CREATE PLAYLIST</a><br><br>
+    </div>
+    <div class="box"> <a href="/viewplaylist">VIEW PLAYLIST</a>
+    </div>
+   </div>
+
+
+</body>
+
+</html>

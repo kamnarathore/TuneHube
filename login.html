@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body
+  {
+    background-color: #caded7;
+  }  
+.container{
+   height: 35rem;
+   width: 30rem;
+   background-color: rgb(7, 5, 5);
+   opacity: 1.4;
+   color: white;
+   padding: 23px 12px 1px 44px;
+   border-radius: 12px;
+   margin: 50px auto;
+   
+}
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+h2
+{
+    text-align: center;
+    margin: 15px;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.container:hover {
+            border: 5px solid aqua;
+            box-shadow: 0 0 20px aqua, inset 0 0 20px aqua;
+        }
+        .container:hover .input {
+            border: 5px solid aqua;
+            box-shadow: 0 0 20px aqua, inset 0 0 20px aqua;
+        }
+        .container:hover #login {
+            border: 5px solid aqua;
+            box-shadow: 0 0 20px aqua, inset 0 0 20px aqua;
+            background-color: aqua;
+            color: black;
+            font-weight: 900;
+            font-size: 20px;
+        }
+
+
+
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Login here</h2>
+  <form action="/login"  method="post">
+    <label for="Email ID">Email ID :</label>
+              <input type="email" name="email" id="email" class="input" placeholder="Enter your email id"><br><br>
+              <label for="Password">Password :</label>
+              <input type="password" name="pass" id="password" class="input" placeholder="Enter your email password"><br><br>
+              <input type="submit" value="Login" id="login">
+              </form>
+</div>
+</body>
+</html>
